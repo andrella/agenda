@@ -5,4 +5,13 @@ import {Component} from '@angular/core';
   templateUrl: './hello-world.component.html',
 })
 export class HelloWorld {
+  counter = 0;
+
+  private increaseCounter(this) {
+    this.counter++;
+  }
+
+  public getCounter(){
+    return this.counter;
+  }
 }
